@@ -14,9 +14,20 @@ class CardNews extends HTMLElement {
 
         const cardLeft = document.createElement("div");
         cardLeft.setAttribute("class", "card_left");
-        
+
+        const author = document.createElement("span");
+        const linkTitle = document.createElement("a");
+        const newsContent = document.createElement("p");
+
+        cardLeft.appendChild(author);
+        cardLeft.appendChild(linkTitle);
+        cardLeft.appendChild(newsContent);
+
+
         const cardRight = document.createElement("div");
         cardRight.setAttribute("class", "card_right");
+        const newsImage = document.createElement("img");
+        cardRight.appendChild(newsImage);
 
 
         componentRoot.appendChild(cardLeft);
